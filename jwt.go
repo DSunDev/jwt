@@ -36,8 +36,8 @@ func Generate(claims claims, signer signer) (string, error) {
 	return fmt.Sprintf("%s.%s.%s", headerB64, payloadB64, signatureB64), nil
 }
 
-func Verify(tokenB64 string, signer signer) (bool, error) {
-	split := strings.Split(tokenB64, ".")
+func Verify(token string, signer signer) (bool, error) {
+	split := strings.Split(token, ".")
 	if len(split) != 3 {
 		return false, fmt.Errorf("invalid token structure")
 	}
