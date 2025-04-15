@@ -1,1 +1,1 @@
-# jwt-dev
+# jwt package
