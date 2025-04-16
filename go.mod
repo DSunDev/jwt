@@ -1,3 +1,3 @@
-module github.com/DSunDev/jwt
+module github.com/dsundev/jwt
 
 go 1.22.6
